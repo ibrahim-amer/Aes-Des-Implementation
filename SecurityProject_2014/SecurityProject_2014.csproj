@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE329620-3053-4837-8CEB-38BC9BCECE28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecurityProject_2014</RootNamespace>
+    <AssemblyName>SecurityProject_2014</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MWArray, Version=2.14.0.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Source\Matlab 2013a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="SteganographyMatlab, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AES Matlab\AES Matlab\SteganographyMatlab\distrib\SteganographyMatlab.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IEncryption.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatricesFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steganography\AES.cs" />
+    <Compile Include="Steganography\BitManipulator.cs" />
+    <Compile Include="Steganography\DES.cs" />
+    <Compile Include="Steganography\ImageBuffer.cs" />
+    <Compile Include="Steganography\TextHider.cs" />
+    <Compile Include="UIHelperFunctions.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Steganography\AESMatlab\Matrices\CipherKeyDec.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\CipherKeyHex.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\matlab.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\MatMixColDec.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\MatMixColInv.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\Rcon.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\RconDec.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\Sbox.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\SboxDec.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\SboxInv.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\SboxInvDec.mat" />
+    <None Include="Steganography\AESMatlab\Matrices\StateDec.mat" />
+    <None Include="Steganography\AESMatlab\mat\CipherKeyDec.mat" />
+    <None Include="Steganography\AESMatlab\mat\CipherKeyHex.mat" />
+    <None Include="Steganography\AESMatlab\mat\matlab.mat" />
+    <None Include="Steganography\AESMatlab\mat\MatMixColDec.mat" />
+    <None Include="Steganography\AESMatlab\mat\MatMixColInv.mat" />
+    <None Include="Steganography\AESMatlab\mat\Rcon.mat" />
+    <None Include="Steganography\AESMatlab\mat\RconDec.mat" />
+    <None Include="Steganography\AESMatlab\mat\Sbox.mat" />
+    <None Include="Steganography\AESMatlab\mat\SboxDec.mat" />
+    <None Include="Steganography\AESMatlab\mat\SboxInv.mat" />
+    <None Include="Steganography\AESMatlab\mat\SboxInvDec.mat" />
+    <None Include="Steganography\AESMatlab\mat\StateDec.mat" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Steganography\AESMatlab\Functions\AESDecrypt.m" />
+    <Content Include="Steganography\AESMatlab\Functions\AESEncrypt.m" />
+    <Content Include="Steganography\AESMatlab\Functions\block2str.m" />
+    <Content Include="Steganography\AESMatlab\Functions\blocks2vector.m" />
+    <Content Include="Steganography\AESMatlab\Functions\bunchbitxor.m" />
+    <Content Include="Steganography\AESMatlab\Functions\cell2decmat.m" />
+    <Content Include="Steganography\AESMatlab\Functions\circularshift.m" />
+    <Content Include="Steganography\AESMatlab\Functions\colwisexor.m" />
+    <Content Include="Steganography\AESMatlab\Functions\dec2cellhex.m" />
+    <Content Include="Steganography\AESMatlab\Functions\fifieldsmul.m" />
+    <Content Include="Steganography\AESMatlab\Functions\getstates.m" />
+    <Content Include="Steganography\AESMatlab\Functions\KeyExpansion.m" />
+    <Content Include="Steganography\AESMatlab\Functions\loadmatfile.m" />
+    <Content Include="Steganography\AESMatlab\Functions\MixCol.m" />
+    <Content Include="Steganography\AESMatlab\Functions\shiftrows.m" />
+    <Content Include="Steganography\AESMatlab\Functions\SubBytes.m" />
+    <Content Include="Steganography\AESMatlab\Functions\vector2blocks.m" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

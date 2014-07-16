@@ -1,0 +1,1852 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SteganographyMatlab</name>
+    </assembly>
+    <members>
+        <member name="T:SteganographyMatlab.AES">
+            <summary>
+            The AES class provides a CLS compliant, MWArray interface to the MATLAB functions
+            contained in the files:
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\AESDecrypt.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\AESEncrypt.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\block2str.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\blocks2vector.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\bunchbitxor.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\cell2decmat.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\circularshift.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\colwisexor.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\dec2cellhex.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\fifieldsmul.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\getstates.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\KeyExpansion.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\loadmatfile.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\MixCol.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\shiftrows.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\SubBytes.m
+            <newpara></newpara>
+            D:\Programming\Security project\AES Matlab\AES Matlab\vector2blocks.m
+            <newpara></newpara>
+            deployprint.m
+            <newpara></newpara>
+            printdlg.m
+            </summary>
+            <remarks>
+            @Version 0.0
+            </remarks>
+        </member>
+        <member name="M:SteganographyMatlab.AES.#cctor">
+            <summary internal= "true">
+            The static constructor instantiates and initializes the MATLAB Compiler Runtime
+            instance.
+            </summary>
+        </member>
+        <member name="M:SteganographyMatlab.AES.#ctor">
+            <summary>
+            Constructs a new instance of the AES class.
+            </summary>
+        </member>
+        <member name="M:SteganographyMatlab.AES.Finalize">
+            <summary internal= "true">
+            Class destructor called by the CLR garbage collector.
+            </summary>
+        </member>
+        <member name="M:SteganographyMatlab.AES.Dispose">
+            <summary>
+            Frees the native resources associated with this object
+            </summary>
+        </member>
+        <member name="M:SteganographyMatlab.AES.Dispose(System.Boolean)">
+            <summary internal= "true">
+            Internal dispose function
+            </summary>
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="ciphertext">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="sboxinv">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 5-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="sboxinv">Input argument #4</param>
+             <param name="rcon">Input argument #5</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 6-input MWArrayinterface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="sboxinv">Input argument #4</param>
+             <param name="rcon">Input argument #5</param>
+             <param name="mixcolmatinv">Input argument #6</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="ciphertext">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="sboxinv">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 5-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="sboxinv">Input argument #4</param>
+             <param name="rcon">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 6-input MWArray interface to the AESDecrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="ciphertext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="sboxinv">Input argument #4</param>
+             <param name="rcon">Input argument #5</param>
+             <param name="mixcolmatinv">Input argument #6</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESDecrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the AESDecrypt function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="plaintext">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 4-input MWArrayinterface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="rcon">Input argument #4</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 5-input MWArrayinterface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="rcon">Input argument #4</param>
+             <param name="mixcolmat">Input argument #5</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="plaintext">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 4-input MWArray interface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="rcon">Input argument #4</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 5-input MWArray interface to the AESEncrypt MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="plaintext">Input argument #1</param>
+             <param name="cipherkey">Input argument #2</param>
+             <param name="sbox">Input argument #3</param>
+             <param name="rcon">Input argument #4</param>
+             <param name="mixcolmat">Input argument #5</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.AESEncrypt(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the AESEncrypt function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             for each block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.block2str">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the block2str MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function converts from block (cipher or plain text) into 
+             String 
+             Input : block - Input block to be converted
+             Output : The coressponding string to the specified block
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.block2str(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the block2str MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function converts from block (cipher or plain text) into 
+             String 
+             Input : block - Input block to be converted
+             Output : The coressponding string to the specified block
+             </remarks>
+             <param name="block">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.block2str(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the block2str MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function converts from block (cipher or plain text) into 
+             String 
+             Input : block - Input block to be converted
+             Output : The coressponding string to the specified block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.block2str(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the block2str MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             This function converts from block (cipher or plain text) into 
+             String 
+             Input : block - Input block to be converted
+             Output : The coressponding string to the specified block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="block">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.block2str(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the block2str function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             This function converts from block (cipher or plain text) into 
+             String 
+             Input : block - Input block to be converted
+             Output : The coressponding string to the specified block
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.blocks2vector">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the blocks2vector MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.blocks2vector(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the blocks2vector MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="blocks">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.blocks2vector(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the blocks2vector MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.blocks2vector(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the blocks2vector MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="blocks">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.blocks2vector(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the blocks2vector function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.bunchbitxor">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the bunchbitxor MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Takes a bunch of iput paramters and calculate bitxor between them
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.bunchbitxor(MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the bunchbitxor MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Takes a bunch of iput paramters and calculate bitxor between them
+             </remarks>
+             <param name="varargin">Array of MWArrays representing the input arguments 1
+             through varargin.length</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.bunchbitxor(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the bunchbitxor MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Takes a bunch of iput paramters and calculate bitxor between them
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.bunchbitxor(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides the standard 1-input MWArray interface to the bunchbitxor MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Takes a bunch of iput paramters and calculate bitxor between them
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="varargin">Array of MWArrays representing the input arguments 1
+             through varargin.length</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.bunchbitxor(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the bunchbitxor function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Takes a bunch of iput paramters and calculate bitxor between them
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.cell2decmat">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the cell2decmat MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.cell2decmat(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the cell2decmat MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="cell">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.cell2decmat(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the cell2decmat MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.cell2decmat(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the cell2decmat MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="cell">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.cell2decmat(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the cell2decmat function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="col">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="col">Input argument #1</param>
+             <param name="k">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="col">Input argument #1</param>
+             <param name="k">Input argument #2</param>
+             <param name="state">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="col">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="col">Input argument #1</param>
+             <param name="k">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the circularshift MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="col">Input argument #1</param>
+             <param name="k">Input argument #2</param>
+             <param name="state">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.circularshift(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the circularshift function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             out = fliplr(cs);
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the colwisexor MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the colwisexor MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="a">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the colwisexor MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="a">Input argument #1</param>
+             <param name="b">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the colwisexor MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the colwisexor MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="a">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the colwisexor MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="a">Input argument #1</param>
+             <param name="b">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.colwisexor(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the colwisexor function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.dec2cellhex">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the dec2cellhex MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.dec2cellhex(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the dec2cellhex MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="dec">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.dec2cellhex(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the dec2cellhex MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.dec2cellhex(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the dec2cellhex MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="dec">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.dec2cellhex(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the dec2cellhex function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the fifieldsmul MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             *8
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the fifieldsmul MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             *8
+             </remarks>
+             <param name="element">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the fifieldsmul MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             *8
+             </remarks>
+             <param name="element">Input argument #1</param>
+             <param name="prod">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the fifieldsmul MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             *8
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the fifieldsmul MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             *8
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="element">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the fifieldsmul MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             *8
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="element">Input argument #1</param>
+             <param name="prod">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.fifieldsmul(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the fifieldsmul function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             *8
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.getstates">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the getstates MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             create cell array of the hexadecimal reprsentation of 
+             the plain text
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.getstates(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the getstates MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             create cell array of the hexadecimal reprsentation of 
+             the plain text
+             </remarks>
+             <param name="plaintext">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.getstates(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the getstates MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             create cell array of the hexadecimal reprsentation of 
+             the plain text
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.getstates(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the getstates MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             create cell array of the hexadecimal reprsentation of 
+             the plain text
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="plaintext">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.getstates(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the getstates function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             create cell array of the hexadecimal reprsentation of 
+             the plain text
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="Key">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="Key">Input argument #1</param>
+             <param name="SBox">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="Key">Input argument #1</param>
+             <param name="SBox">Input argument #2</param>
+             <param name="RconDec">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Key">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Key">Input argument #1</param>
+             <param name="SBox">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the KeyExpansion MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="Key">Input argument #1</param>
+             <param name="SBox">Input argument #2</param>
+             <param name="RconDec">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.KeyExpansion(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the KeyExpansion function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             Rotate last column
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.loadmatfile">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the loadmatfile MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.loadmatfile(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the loadmatfile MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="path">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.loadmatfile(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the loadmatfile MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.loadmatfile(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the loadmatfile MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="path">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.loadmatfile(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the loadmatfile function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the MixCol MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the MixCol MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <param name="InMatrix">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the MixCol MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <param name="InMatrix">Input argument #1</param>
+             <param name="MatMixCol">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the MixCol MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the MixCol MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="InMatrix">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the MixCol MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="InMatrix">Input argument #1</param>
+             <param name="MatMixCol">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.MixCol(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the MixCol function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             --------------------------------------------------------------------------
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the shiftrows MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the shiftrows MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="mat">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the shiftrows MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="mat">Input argument #1</param>
+             <param name="state">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the shiftrows MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the shiftrows MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="mat">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the shiftrows MATLAB function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="mat">Input argument #1</param>
+             <param name="state">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.shiftrows(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the shiftrows function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the SubBytes MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the SubBytes MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <param name="InMat">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the SubBytes MATLAB
+             function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <param name="InMat">Input argument #1</param>
+             <param name="Sbox">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the SubBytes MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the SubBytes MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="InMat">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the SubBytes MATLAB function.
+             </summary>
+             <remarks>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="InMat">Input argument #1</param>
+             <param name="Sbox">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.SubBytes(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the SubBytes function in which the input and output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             M-Documentation:
+             UNTITLED4 Summary of this function goes here
+             Detailed explanation goes here
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks">
+             <summary>
+             Provides a single output, 0-input MWArrayinterface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 1-input MWArrayinterface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="vector">Input argument #1</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 2-input MWArrayinterface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="vector">Input argument #1</param>
+             <param name="n">Input argument #2</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides a single output, 3-input MWArrayinterface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="vector">Input argument #1</param>
+             <param name="n">Input argument #2</param>
+             <param name="m">Input argument #3</param>
+             <returns>An MWArray containing the first output argument.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(System.Int32)">
+             <summary>
+             Provides the standard 0-input MWArray interface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 1-input MWArray interface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="vector">Input argument #1</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 2-input MWArray interface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="vector">Input argument #1</param>
+             <param name="n">Input argument #2</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray,MathWorks.MATLAB.NET.Arrays.MWArray)">
+             <summary>
+             Provides the standard 3-input MWArray interface to the vector2blocks MATLAB
+             function.
+             </summary>
+             <remarks>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return.</param>
+             <param name="vector">Input argument #1</param>
+             <param name="n">Input argument #2</param>
+             <param name="m">Input argument #3</param>
+             <returns>An Array of length "numArgsOut" containing the output
+             arguments.</returns>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.vector2blocks(System.Int32,MathWorks.MATLAB.NET.Arrays.MWArray[]@,MathWorks.MATLAB.NET.Arrays.MWArray[])">
+             <summary>
+             Provides an interface for the vector2blocks function in which the input and
+             output
+             arguments are specified as an array of MWArrays.
+             </summary>
+             <remarks>
+             This method will allocate and return by reference the output argument
+             array.<newpara></newpara>
+             </remarks>
+             <param name="numArgsOut">The number of output arguments to return</param>
+             <param name= "argsOut">Array of MWArray output arguments</param>
+             <param name= "argsIn">Array of MWArray input arguments</param>
+            
+        </member>
+        <member name="M:SteganographyMatlab.AES.WaitForFiguresToDie">
+             <summary>
+             This method will cause a MATLAB figure window to behave as a modal dialog box.
+             The method will not return until all the figure windows associated with this
+             component have been closed.
+             </summary>
+             <remarks>
+             An application should only call this method when required to keep the
+             MATLAB figure window from disappearing.  Other techniques, such as calling
+             Console.ReadLine() from the application should be considered where
+             possible.</remarks>
+            
+        </member>
+    </members>
+</doc>
