@@ -6,7 +6,8 @@ This README would normally document whatever steps are necessary to get your app
 
 * Quick summary
   This project has been done by students of FCIS Ain Shams university 
-  The project is an implementation of AES and DES encryption / decryption algorithms, when you run the project choose open an image choose your preferred encryption algorithm, enter your message, encrypt it and finally hide it in the image.
+  The project is an implementation of AES and DES encryption / decryption algorithms, when you run the project choose open an image choose your preferred encryption algorithm, 
+  enter your message, encrypt it and finally hide it in the image.
  
 * 1.0
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
@@ -29,3 +30,6 @@ This README would normally document whatever steps are necessary to get your app
 ### Who do I talk to? ###
 
 * Ibrahim Amer: ibrahim.ali.amer92@gmail.com
+
+### To Review Matlab Code ###
+Will find a folder called AES Matlab (only AES algorithm were implemented in Matlab)
